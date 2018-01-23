@@ -18,8 +18,12 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+function isTyler(name){
+  if(name === 'Tyler'){
+    return true;
+  }
+  return false;
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -28,7 +32,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  let name = prompt("What is your name?");
+  return name;
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +48,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +60,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//arguments are what are used in functions and parameters are what is passed to a function.
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +70,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//null,undefined,false,0,NaN
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +80,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName(){
+    return "Brandon";
+  }
 
 
 /*
@@ -79,7 +90,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+let newMyName = function(){
+  return "Brandon";
+};
 
 
 /*
@@ -87,8 +100,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
-
+alert(newMyName);
 
 ////////// PROBLEM 7 //////////
 
@@ -97,15 +109,18 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+function outerFn(){
+  return function(){
+    return "Brandon";
+  }
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
 */
 
 //Code Here
-
+let innerFn = outerFn();
 
 
 /* 
@@ -113,3 +128,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn;
